@@ -59,6 +59,7 @@ action_id_5 = wait.until(EC.element_to_be_clickable((By.XPATH, 'XPATH')))
 action_id_5.click()
 
 Description =>  resolution
+
 resolution = wait.until(EC.element_to_be_clickable((By.ID, 'ID')))
 resolution.click()
 
