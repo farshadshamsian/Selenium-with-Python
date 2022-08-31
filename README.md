@@ -41,6 +41,7 @@ login_form_submit = wait.until(EC.element_to_be_clickable((By.ID, 'ID')))
 login_form_submit.click()
 
 Description =>  sleep time
+
 time.sleep(3)
 
 Description =>  issues
