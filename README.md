@@ -22,10 +22,15 @@ from selenium.webdriver.support import expected_conditions as EC
 import ctypes
 
 chrome_web_driver = Service("C:\Chrome Driver\chromedriver.exe")
+
 driver = webdriver.Chrome(service=chrome_web_driver)
+
 wait = WebDriverWait(driver, 30)
+
 driver.get(*Link*)
+
 driver.set_window_position(0, 0)
+
 driver.set_window_size(1280, 900)
 
 
