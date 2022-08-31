@@ -23,71 +23,57 @@ driver.get(*Link*)
 driver.set_window_position(0, 0)
 driver.set_window_size(1280, 900)
 
-Description =>  user_name
-
+// user_name
 login_form_username = wait.until(EC.element_to_be_clickable((By.ID, 'ID')))
 login_form_username.clear()
 login_form_username.send_keys(*username*)
 
-Description =>  Password
-
+// Password
 login_form_password = wait.until(EC.element_to_be_clickable((By.ID, 'ID')))
 login_form_password.clear()
 login_form_password.send_keys(*password*)
 
-Description =>  log_in
-
+// log_in
 login_form_submit = wait.until(EC.element_to_be_clickable((By.ID, 'ID')))
 login_form_submit.click()
 
-Description =>  sleep time
-
+// sleep time
 time.sleep(3)
 
-Description =>  issues
-
+// issues
 find_link = wait.until(EC.element_to_be_clickable((By.XPATH, 'XPATH')))
 find_link.click()
 
-Description =>  My open issues
-
+// My open issues
 open_issues = wait.until(EC.element_to_be_clickable((By.XPATH, 'XPATH')))
 open_issues.click()
 
-Description =>  inprogress
-
+// inprogress
 action_id_5 = wait.until(EC.element_to_be_clickable((By.XPATH, 'XPATH')))
 action_id_5.click()
 
-Description =>  resolution
-
+// resolution
 resolution = wait.until(EC.element_to_be_clickable((By.ID, 'ID')))
 resolution.click()
 
 time.sleep(5)
 
-Description =>  issues_done
-
+// issues_done
 Done = wait.until(EC.element_to_be_clickable((By.XPATH, 'XPATH')))
 Done.click()
 
-Description =>  issue-workflow-transition-submit
-
+// issue-workflow-transition-submit
 issue_workflow_transition_submit = wait.until(EC.element_to_be_clickable((By.ID, 'ID')))
 issue_workflow_transition_submit.click()
 
-Description =>  sleep time
-
+// sleep time
 time.sleep(5)
 
-Description =>  quit
-
+// quit
 driver.quit()
 
-Description =>  sleep time
-
+// sleep time
 time.sleep(2)
 
-Description =>  lock
-
+// lock
 ctypes.windll.user32.LockWorkStation()
